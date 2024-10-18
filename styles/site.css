@@ -21,10 +21,12 @@ body{
   width: 100vw;
   height: 100vh;
   min-width: 299px;
+  background-image: linear-gradient(rgba(255,0,0,1),rgba(0, 0, 0, 1));
 }
 .overlay {
   border-width: 10px;
-  border-image: fill 1 linear-gradient(hsla(141, 17%, 77%, 0.8), hsla(141, 17%, 77%, 0.8));
+  border-image: fill 1 linear-gradient(hsla(141, 17%, 77%, 0.8)98%,hsla(120, 21%, 76%, 0.2));
+
 }
 .hero-quote {
   background-color: #1D3124;
