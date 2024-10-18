@@ -21,7 +21,6 @@ body{
   width: 100vw;
   height: 100vh;
   min-width: 299px;
-  background-image: linear-gradient(rgba(255,0,0,1),rgba(0, 0, 0, 1));
 }
 .overlay {
   border-width: 10px;
