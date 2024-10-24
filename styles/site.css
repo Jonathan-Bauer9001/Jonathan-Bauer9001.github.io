@@ -9,6 +9,9 @@ body{
   background-color: #ffe;
   min-width: 299px;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /* header */
 #header {
@@ -96,7 +99,7 @@ li a:hover::before{
   border-image: fill 1 linear-gradient(hsla(141, 17%, 77%, 0.8)98%,hsla(120, 21%, 76%, 0.2));
 }
 .hero-quote {
-  border: 1px dashed #132;
+  font-weight: 500;
   color: #132;
   border-radius: 1em;
   max-width: fit-content;
@@ -104,7 +107,11 @@ li a:hover::before{
   padding-bottom: .5em;
   max-width: 300px;
 } 
-.hero-links a{
+.frosted {
+  background-color: hsla(220, 100%, 85%, 0.25);
+  backdrop-filter: blur(2px);
+}
+.hero-links a {
   color: #132;
   text-decoration: none;
 }
@@ -112,7 +119,6 @@ li a:hover::before{
   color:#e96;
 }
 .hero-links {
-  border: 1px dashed #132;
   border-radius: 1em;
   max-width: fit-content;
   padding-bottom: .5em;
@@ -133,6 +139,8 @@ main{
 .section-title h2 {
   padding-top: 1em;
   border-bottom: 2px solid #e96;
+  text-align: left;
+
 }
 .resume-title {
   border-bottom: 2px solid #bcc;
@@ -144,7 +152,30 @@ main{
 .article-list li {
   list-style-type: circle;
 }
-/* portfolio and coursework section */
+/* midterm main ================================================================ M M =*/
+
+.show-off-section {
+  display: inline-block;
+  border: 2px dashed #132;
+  background-color: #bcc;
+  padding: 1em;
+  height: 76vh;
+  margin: 1em;
+  border-radius: 1em;
+  overflow-y: auto;
+  box-shadow: 1px 3px 6px 1px grey inset;
+  scrollbar-width: none;
+  -ms-overflow-style: none;  
+}
+
+.show-off-section::-webkit-scrollbar{
+  display: none;
+}
+.vid {
+max-height: 60vh
+}
+
+/* portfolio and coursework section ======================================= P & CW S =*/
 .col {
   margin-top: 64px;
   padding-top: 1em;
